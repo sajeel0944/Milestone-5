@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.resumeDiv{
+    width: 70%;
+    /* padding: 1%; */
+    border: 2px solid black;
+}
+
+header{
+    width: 100%;
+    height: 160px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /* background-color: rgb(0, 174, 255); */
+    /* background-color: rgba(0, 0, 0, 0.836); */
+    background-color: rgb(32, 45, 59);
+    margin-bottom: 30px;
+}
+
+.white{
+    color: white;
+}
+
+header img{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    border:1px solid rgb(32, 45, 59);
+    background-color: white;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.content aside{
+    width: 30%;
+    /* background-color: aqua; */
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.contant,
+.education,
+.skill,
+.language,
+.refrence{
+    margin-bottom: 30px;
+}
+
+.contant h2,
+.education h2,
+.skill h2,
+.language h2,
+.exprience h2,
+.refrence h2{
+    border-bottom: 1px solid rgb(32, 45, 59);;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    /* color:rgb(13, 235, 235) */
+    color:rgb(32, 45, 59);
+}
+
+.education{
+    line-height: 20px;
+}
+
+.skill ul{
+    margin-left: 18px;
+}
+
+.main-contant{
+    padding-left: 50px;
+    width: 70%;
+}
+
+.exprience-items{
+    margin-bottom: 40px;
+}
+
+.exprience-items p{
+    margin-bottom: 5px;
+}
+
+.exprience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.btnDiv{
+    width: 70%;
+    padding:2%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    margin-top: 30px;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 16px;
+    color: white;
+    /* background-color: rgb(0, 162, 255); */
+    background-color: rgb(32, 45, 59);;
+    cursor:pointer;
+    border-radius: 8px;
+
+    &:hover{
+        background-color: rgb(0, 110, 255);
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+/* is ko ts file main hai */
+.hide{
+    display: none;
+}
+
+.btncopy{
+    font-size: 15px;
+}
+
+
+@media print {
+    .btnDiv{
+        display: none;
+    }
+}
+
+
+
+@media  (max-width:786px) {
+    .content{
+        flex-direction: column;
+    }
+
+    .aside,.main-contant{
+        width: 100%;
+    }
+}
+
+
+
+@media  (max-width:450px) {
+    .btn{
+      margin-left: 0rem;     
+   }
+   
+   .btncopy{
+    font-size: 13px;
+   }
+
+   .btnDiv{
+    width: 95%;
+    padding: 0;
+   }
+
+   
+.resumeDiv{
+   width: 95%;
+}
+
+   header img{
+       margin-left: -50px;
+   }
+}
